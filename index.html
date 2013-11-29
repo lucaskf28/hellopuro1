@@ -14,16 +14,18 @@
     //
     function onDeviceReady() {
         var element = document.getElementById('deviceProperties');
-        element.innerHTML = 'Device Model: '    + device.model    + '<br />' +
-                            'Device Cordova: '  + device.cordova  + '<br />' +
-                            'Device Platform: ' + device.platform + '<br />' +
-                            'Device UUID: '     + device.uuid     + '<br />' +
-                            'Device Version: '  + device.version  + '<br />';
+        element.innerHTML = 'Modelo: '    + device.model    + '<br />' +
+                            'Cordova: '  + device.cordova  + '<br />' +
+                            'Plataforma: ' + device.platform + '<br />' +
+                            'UUID: '     + device.uuid     + '<br />' +
+                            'Versão: '  + device.version  + '<br />' +
+                            'Nome: '     + device.name     + '<br />';
     }
 
     </script>
   </head>
   <body>
     <p id="deviceProperties">Loading device properties...</p>
+    <p id="links"><a href="camera.html">Câmera</a></p>
   </body>
 </html>
