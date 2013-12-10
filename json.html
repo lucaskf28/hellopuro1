@@ -1,15 +1,16 @@
 <HTML>
+<title>Teste JSON connect na unifesp</title>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script charset="utf&minus;8" type="text/javascript">
 function connect(e){
 	var term= {button:e};
 	$.ajax({
-		url:'http://www.indiageeks.in/tutorials/reply.php',
+		url:'http://www.baixadasantista.unifesp.br/serverside.php',
 		type:'POST',
 		data:term,
 		dataType:'json',
 		error:function(jqXHR,text_status,strError){
-			alert('no connection');},
+		alert('Não conectou');},
 		timeout:60000,
 		success:function(data){
 			$("#result").html("");
@@ -20,9 +21,9 @@ function connect(e){
 	});
 }
 </script>
-<center><b>Bikes or Cars</b></center>
-<center><input onclick="connect(this.value)" type="button" value="cars" /></center>
-<center><input onclick="connect(this.value)" type="button" value="bikes" /></center>
+<center><b>Qual a Balada hoje?</b></center>
+<center><input onclick="connect(this.value)" type="button" value="Santos" /></center>
+<center><input onclick="connect(this.value)" type="button" value="Sampa" /></center>
 <center><b>Results</b></center>
 <ul id="result"></ul>
 </HTML>
