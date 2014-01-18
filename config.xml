@@ -63,8 +63,11 @@
 
         Otherwise, you can specify specific domains:
     -->
+    <cordova>
+        <access origin="http://127.0.0.1*"/>
+        <access origin=".*" /> 
+    </cordova>
     
-    <access origin="*" /> <!-- allow local pages -->
     <!--
     <access origin="http://www.indiageeks.in" subdomains="true" />
     <access origin="http://www.baixadasantista.unifesp.br" subdomains="true" />
